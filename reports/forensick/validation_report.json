@@ -1,0 +1,18 @@
+{
+  "report_name": "validation_report",
+  "generated_at_utc": "2026-04-14T23:28:48+00:00",
+  "status": "passed",
+  "totals": {
+    "requirements": 10,
+    "parents": 3,
+    "failures": 0
+  },
+  "issue_counts": {
+    "empty_expected_structure": 0,
+    "invalid_parent_ids": 0,
+    "invalid_suffixes": 0,
+    "missing_requirements_from_structure": 0,
+    "unexpected_or_unmapped_structure": 0
+  },
+  "failures": []
+}

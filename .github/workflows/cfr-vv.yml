@@ -32,3 +32,17 @@ jobs:
 
       - name: Run Validation
         run: python scripts/validation.py
+
+      - name: Build Forensick Summary
+        run: python scripts/generate_forensick_report.py
+
+      - name: Publish Workflow Summary
+        if: always()
+        run: cat reports/forensick/summary.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload Forensick Artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: forensick-artifacts
+          path: reports/forensick/

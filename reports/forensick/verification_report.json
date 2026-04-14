@@ -1,0 +1,21 @@
+{
+  "report_name": "verification_report",
+  "generated_at_utc": "2026-04-14T23:28:46+00:00",
+  "status": "passed",
+  "totals": {
+    "requirements": 10,
+    "test_cases": 10,
+    "failures": 0
+  },
+  "issue_counts": {
+    "duplicate_requirement_ids": 0,
+    "duplicate_test_case_ids": 0,
+    "invalid_identifier_format": 0,
+    "missing_requirement_fields": 0,
+    "missing_test_case_fields": 0,
+    "missing_test_coverage": 0,
+    "orphan_test_cases": 0,
+    "parent_child_mismatches": 0
+  },
+  "failures": []
+}

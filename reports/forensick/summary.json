@@ -1,0 +1,23 @@
+{
+  "report_name": "forensick_summary",
+  "generated_at_utc": "2026-04-14T23:28:51+00:00",
+  "overall_status": "passed",
+  "checks": {
+    "missing_requirement_or_test_fields": 0,
+    "missing_test_coverage": 0,
+    "invalid_identifier_format": 0,
+    "unexpected_or_unmapped_structure": 0,
+    "ci_ready_status": 1
+  },
+  "source_reports": [
+    "reports\\forensick\\verification_report.json",
+    "reports\\forensick\\validation_report.json"
+  ],
+  "highlights": [
+    "Missing requirement or test-case fields",
+    "Missing test coverage for selected atomic rules",
+    "Invalid requirement or test-case identifier format",
+    "Unexpected or unmapped requirement structure",
+    "CI-ready pass/fail status based on verification and validation"
+  ]
+}

@@ -12,6 +12,14 @@ COMP 5710 Group Project for group `EffatGroup`
 
 This project implements Verification & Validation for atomic rules extracted from `21 CFR 117.130` using Python scripts, JSON artifacts, and GitHub Actions.
 
+## Engineering Highlights
+
+- Automated CFR-to-JSON pipeline for regulatory requirement extraction
+- Deterministic parent-child requirement mapping for atomic rules
+- Minimal test-case generation for requirement coverage
+- Verification and validation gates in CI
+- Forensick evidence artifacts for auditability and debugging
+
 ## What This Project Does
 
 1. Parses `inputs/21_CFR_117.130.md` into atomic CFR requirements.
@@ -38,6 +46,7 @@ EffatGroup/
 |   |-- verification.py
 |   `-- validation.py
 |-- requirements.json
+|-- reports/forensick/
 |-- expected_structure.json
 |-- test_cases.json
 `-- README.md
@@ -68,6 +77,7 @@ python scripts/generate_expected_structure.py
 python scripts/generate_test_cases.py
 python scripts/verification.py
 python scripts/validation.py
+python scripts/generate_forensick_report.py
 ```
 
 ## Current Status
@@ -89,3 +99,26 @@ Examples of forensic-style signals that can be shown in this project:
 - Invalid requirement ID
 - Unexpected structure entry
 - CI pass/fail evidence
+
+## Forensick Integration
+
+The project now generates evidence artifacts in `reports/forensick/`:
+
+- `verification_report.json`
+- `validation_report.json`
+- `summary.json`
+- `summary.md`
+
+The five integrated forensic checks are:
+
+- Missing requirement or test-case fields
+- Missing test coverage for selected rules
+- Invalid requirement or test-case identifier formats
+- Unexpected or unmapped parent-child structure
+- CI-ready pass/fail status from verification and validation
+
+## Resume Framing
+
+This project is strong enough to describe as:
+
+`Built a Python and GitHub Actions pipeline that converts CFR regulatory text into atomic requirements, auto-generates validation artifacts, and produces forensic audit reports for compliance-focused verification and validation.`
